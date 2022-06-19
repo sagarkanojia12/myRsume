@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <title>main</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            /* background-color: rgb(39, 39, 39); */
+            background-color:#fff;
+            /* color:#fff; */
+            color:rgb(0, 0, 0);
+            overflow-x: hidden;
+        }
+        .container .summary{
+            width: 100%;
+            height: auto;
+        }
+        .container .summary h3{
+            text-decoration: underline;
+            text-transform: uppercase;
+            transform: translateX(0);
+            animation:move 3s linear;
+        }
+        .container .summary h3,p{
+            margin: 5px 0;
+            text-align: justify;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .container .summary p{
+            font-size: 0.9em;
+        }
+        .container .experience{
+            width: 100%;
+            height: auto;
+        }
+        .container .experience h3{
+            text-decoration: underline;
+            text-transform: uppercase;
+            transform: translateX(0);
+            animation:move 3s linear;
+        }
+        .container .experience h3,p{
+            margin: 5px 0;
+            text-align: justify;
+        }
+        .container .table_box,
+        .container .experience{
+          margin: 10px 0 0 0;
+          width: 100%;
+          height: 100%;
+        }
+        .container .table_box h3,
+        .container .knowledge h3{
+            text-decoration: underline;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            transform: translateX(0);
+            animation:move 3s linear;
+        }
+        .container .knowledge h3{
+            margin-top: 15px;
+            margin-bottom: 10px;
+            transform: translateX(0);
+            animation:move 3s linear;
+        }
+        .container .table_box table,
+        .container .experience table,
+        .container .knowledge table{
+          background: linear-gradient(-45deg, rgb(49, 49, 49),rgb(53, 51, 51)); 
+          width: 100%;
+          height: 100%;
+          color:#fff;
+          border-radius: 3px;
+        }
+        .container .table_box table th,td,
+        .container .experience th,td{
+            padding: 10px;   
+            text-align: center;
+        }
+        .container .knowledge th,td{
+            padding: 10px;   
+        }
+        .container .knowledge th{
+            padding-left:70px;   
+            text-align: left;
+        }
+        ::-webkit-scrollbar{
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track{
+            background:rgb(150, 150, 150);
+            border-radius: 100vw;
+        }
+        ::-webkit-scrollbar-thumb{
+            background:rgb(31, 31, 31);
+            border-radius: 100vw;
+        }
+        ::-webkit-scrollbar-thumb:hover{
+            background:rgb(70, 70, 70);
+            border-radius: 100vw;
+        }
+        .container .sign{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+        .container .sign .date{
+            display: flex;
+            flex-direction: column;
+            padding: 0 10px;
+        }
+        .container .sign .usersign{
+           padding: 0 10px;
+           justify-content: flex-start;
+           margin-top: 10px;
+        }
+        .container .sign .usersign .usersignimg{
+            font-family: 'Cookie', cursive;
+            font-size: 1.5rem;
+        }
+        @keyframes move {
+            0%{
+                transform: translateX(50%);
+            }
+           100%{
+                transform: translateX(0%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="summary">
+            <h3>About Me</h3>
+            <p>Hi, I am Sagar Kanojia , a BA graduate from New Delhi. I have been living in Delhi since I graduated from Dyal Singh College, New Delhi, in 2022.
+
+                My father works as a laundryman, and my mom works with my dad. I have a younger brother who is pursuing his graduation who lives at home with my parents.
+                
+                In the past few years, I have enrolled myself in computer learning and web development and learnt software like Adobe Photoshop , word, Excel. I believe that I gained real-world skills during my 6-month internship at GSO company.
+                
+                Other than my studies, I love Basketball and chess, And I love traveling and meeting new people and learning something new.</p>
+        </div>
+        <div class="table_box">
+            <h3>Education</h3>
+            <table border="1" cellspacing="0">
+                <tr>
+                    <th>S.No.</th>
+                    <th>Class</th>
+                    <th>School & college Name</th>
+                    <th>Board</th>
+                    <th>percentage %</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>10th</td>
+                    <td>M.B.D.A.V.Sr.Sec.School</td>
+                    <td>CBSC</td>
+                    <td>59%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>12th</td>
+                    <td>M.B.D.A.V.Sr.Sec.School</td>
+                    <td>CBSC</td>
+                    <td>70%</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Graduation (B.A)</td>
+                    <td>Dyal Singh college</td>
+                    <td>DU</td>
+                    <td>?...</td>
+                </tr>
+            </table>
+        </div>
+        <div class="knowledge">
+            <h3>Technology Knowledge</h3>
+            <table border="1" cellspacing="0">
+                <tr>
+                    <th>Front End</th>
+                    <td>HTML-5, CSS-3, JavaScript, Sass, Jquery</td>
+                </tr>
+                <tr>
+                    <th>Back End</th>
+                    <td>PHP , Mysql , Node.js, MongoDB</td>
+                </tr>
+                <tr>
+                    <th>Frame Work</th>
+                    <td> Bootstrap-4, Wordpress</td>
+                </tr>
+                <tr>
+                    <th>Software Knowledge</th>
+                    <td>Photoshop, Excel, Word, PowerPoint</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- <div class="experience">
+            <h3>experience</h3>
+            <table border="1" cellspacing="0">
+                <tr>
+                    <th>S.No.</th>
+                    <th>Name of institution</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Total (year)</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>PGAT institute</td>
+                    <td>2023</td>
+                    <td>2026</td>
+                    <td>3 year</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>XYZ institute</td>
+                    <td>2026</td>
+                    <td>2028</td>
+                    <td>2 year</td>
+                </tr>
+            </table>
+        </div> -->
+
+        <div class="sign">
+            <div class="date">
+                <div class="name">Name:- <span>Sagar Kanojia</span></div>
+                <div class="dateBox">Date:- <span id="dateNow">29-02-2022</span></div>
+            </div>
+            <div class="usersign">
+                Signature
+                <div class="usersignimg">
+                    Sagar Kanojia
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        let dateNow = document.getElementById("dateNow");
+        
+        let date = new Date()
+        let crDate = date.getDate();
+        let crMonth = date.getMonth();
+        let crYear = date.getFullYear();
+
+        dateNow.innerText = crDate+"-"+(crMonth+1)+"-"+crYear;
+
+    </script>
+</body>
+</html>

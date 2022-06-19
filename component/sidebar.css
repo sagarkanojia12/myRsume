@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #2c3e50;
+    overflow-y:auto;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background:rgb(216, 216, 216);
+    border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb{
+    background:rgb(31, 31, 31);
+    border-radius: 100vw;
+}
+.container .photo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    filter: drop-shadow(5px 5px 5px rgba(158, 158, 158, 0.8),-5px -5px 5px #fff);
+    /* background: red;*/
+}
+.container .photo .img_box{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5),
+                -5px -5px 10px rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+.container .photo .img_box:hover{
+    transition: 0.5s;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.5),
+    -0px -0px 0px rgba(0,0,0,0.5);
+}
+.container .photo .img_box img{
+    transform:translateY(-15px);
+    width: 100%;
+    height:auto;
+}
+.container .contact{
+    width: 100%;
+}
+.container .contact h3{
+    margin: 5px 0 10px 10px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: -0px 5px 5px rgba(0,0,0,0.4);
+    /* text-decoration: underline; */
+}
+.container .contact label{
+    width: 100%;
+    display: flex;
+    margin: 2px 0;
+}
+.container .contact label .icon{
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+}
+.container .contact label .icon img{
+    width: 100%;
+    height: 100%;
+}
+.container .contact label a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+.container .contact label a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+.container .skills{
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.container .skills label{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.container .skills span{
+    width: 100%;
+    font-size: 0.9rem;
+}
+.container .skills .range{
+    width: 100%;
+    height: 6px;
+    background: #eee;
+    border-radius: 50px;
+    margin: 2px 0;
+    overflow: hidden;
+}
+.container .skills .range .backside{
+    background: rgb(44, 64, 150);
+    border-radius: 10px;
+    height: 100%;
+    animation: animate 1.8s linear;
+}
+.container .skills .range.r1 .backside{
+    width: 96%;
+    animation-delay: 0.2s;
+}
+.container .skills .range.r2 .backside{
+    width: 90%;
+    animation-delay: 0.4s;
+}
+.container .skills .range.r3 .backside{
+    width: 80%;
+    animation-delay: 0.3s; 
+}
+.container .skills .range.r4 .backside{
+    width: 85%;
+}
+@keyframes animate {
+    0%{
+        width: 0;
+    }
+    20%{
+        width: 100%;
+    }
+    40%{
+        width: 80%;
+    }
+    60%{
+        width: 50%;
+    }
+    75%{
+        width: 70%;
+    }
+    85%{
+        width: 80%;
+    }
+    90%{
+        width: 100%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+.container .skills h3{
+    margin: 5px 0 10px 0px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: -0px 5px 5px rgba(0,0,0,0.4);
+}
+.container .languages{
+    color: #fff;
+}
+.container .languages span{
+    margin: 0 0 0 10px;
+}
+.container .languages h3{
+    margin: 5px 0 5px 10px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: -0px 5px 5px rgba(0,0,0,0.4);
+}
+.container .hobbies h3{
+    margin: 10px 0 0px 10px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: -0px 5px 5px rgba(0,0,0,0.4);
+}
+.container .hobbies label{
+   display: flex;
+    flex-direction: column;
+    color:#fff;
+    padding: 5px 10px;
+}
+.container .hobbies label span{
+  font-size: 0.9rem;
+}
+
+/* .container div{
+    height: 100%;
+    border: 1px solid #888;
+} */
